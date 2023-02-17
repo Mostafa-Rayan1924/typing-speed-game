@@ -1,0 +1,138 @@
+:root{
+    --main-color:#2196f3;
+}
+body{
+    font-family:  'Roboto', sans-serif;
+    height: 100vh;
+    background-color: #eceece;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h1{
+text-align: center;
+padding: 15px;
+background: #2196f3;
+color: white;
+text-transform: capitalize;
+}
+.container .info-game{
+    background: white;
+    padding: 20px;
+    margin: 20px 0px;
+    text-align: center;
+}
+.container .info-game p{
+    color: #777;
+    text-transform: capitalize;
+}
+.container .info-game span{
+color: var(--main-color);
+font-size: 18px;
+}
+.container .info-game span::before{
+    content: "[";
+}
+.container .info-game span::after{
+    content: "]";
+}
+.container button{
+width: 100%;
+border: none;
+background: #3c7474;
+color: white;
+padding: 15px;
+border-radius: 13px;
+font-size: 20px;
+text-transform: capitalize;
+cursor: pointer;
+}
+.container .word{
+    text-align: center;
+    font-size: 44px;
+    margin: 10px 0px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+.container input{
+    width: 100%;
+    height: 45px;
+    padding: 0px 15px 0px 15px;
+    border: 2px solid var(--main-color);
+    outline: none;
+    user-select: none;
+    border-radius: 14px;
+    text-align: center;
+    caret-color: var(--main-color);
+    font-size: 20px;
+}
+.container .all-words{
+    background: white;
+    margin: 10px 0px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .all-words div{
+    background: var(--main-color);
+    margin: 5px 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: white;
+}
+.container .end-info{
+    background: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    color: #333;
+}
+.container .end-info span{
+     color: var(--main-color);
+}
+.div{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff82;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.div h2{
+    color: var(--main-color);
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.div p{
+    color: black;
+    font-weight: 800;
+    margin: 10px 0px;
+}
+.div select{
+    width: 200px;
+    border: none;
+    background: #2196f3;
+    padding: 10px;
+    text-transform: capitalize;
+    color: white;
+}
+@media (max-width:567px) {
+    .div h2{
+        font-size: 30px;
+    }
+    .end-info{
+        font-size: 15px;
+    }
+}

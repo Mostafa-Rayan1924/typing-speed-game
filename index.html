@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet">
+    <title>TYPING SPEED GAME</title>
+</head>
+<body>
+    <h1>typing speed game</h1>
+    <div class="container">
+        <div class="info-game">
+            <p>you are playing on <span class="lvl">1</span> level & you have <span class="sec">1</span> seconds to type the word</p>
+        </div>
+        <button>start playing</button>
+        <div class="word"></div>
+        <input type="text">
+        <div class="all-words">
+          
+        </div>
+        <div class="end-info">
+            <div><p >time left: <span class="timeOut"></span> seconds</p></div>
+            <div><p>score: <span class="begin">0</span> from: <span class="end">1</span></p></div>
+
+        </div>
+        <div style="text-align: center; font-size: 40px; margin:10px 0px; color: var(--main-color);" class="finish">
+
+        </div>
+    </div>
+    <div class="div">
+        <h2>hello to my game</h2>
+        <p>please enter the level of the game</p>
+        <select name="easy" id="">
+            <option style="display: none;" value="5" name="easy">easy</option>
+            <option value="5" name="easy">easy</option>
+            <option value="4"  name="normal">normal</option>
+            <option value="3" name="hard">hard</option>
+        </select>
+    </div>
+   
+    <script src="main.js"></script>
+</body>
+</html>
